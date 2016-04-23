@@ -86,13 +86,13 @@
 /uploads/avatar.jpg 需要将你的头像图片放置在 站点的 sour">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Next主题设置">
-<meta property="og:url" content="http://yoursite.com/2016/04/22/1/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/04/23/1/index.html">
 <meta property="og:site_name" content="生命壹号">
 <meta property="og:description" content="站点配置官方文档
 设置侧边栏头像编辑站点的 _config.yml，新增字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：完整的互联网 URL，例如：https://avatars1.githubusercontent.com/u/32269?v=3&amp;amp;s=460站点内的地址，例如：
 
 /uploads/avatar.jpg 需要将你的头像图片放置在 站点的 sour">
-<meta property="og:updated_time" content="2016-04-23T11:14:58.135Z">
+<meta property="og:updated_time" content="2016-04-23T13:22:56.642Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题设置">
 <meta name="twitter:description" content="站点配置官方文档
@@ -258,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-22T12:39:04+08:00" content="2016-04-22">
-              2016-04-22
+            <time itemprop="dateCreated" datetime="2016-04-23T13:36:48+08:00" content="2016-04-23">
+              2016-04-23
             </time>
           </span>
 
@@ -279,13 +279,6 @@
 
                 
                 
-
-              <span id="busuanzi_container_page_pv">
-              &nbsp; | &nbsp; 热度&nbsp; <span id="busuanzi_value_page_pv"></span>°C
-              </span>
-
-
-
               
             </span>
           
@@ -337,7 +330,13 @@
 <p>（2）设定链接的图标。对应的字段是 <code>menu_icons</code>。此设定格式是 <code>item name: icon name</code>，其中 <code>item label</code> 与上一步所配置的链接的文本，<code>icon name</code> 是 <code>Font Awesome</code> 图标的 名字。而 <code>enable</code> 可用于控制是否显示图标，你可以设置成 <code>false</code> 来去掉图标。<br>举例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Social Icons</span><br><span class="line">social_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  # Icon Mappings</span><br><span class="line">  gitHub: github</span><br><span class="line">  twitter: twitter</span><br><span class="line">  weibo: weibo</span><br></pre></td></tr></table></figure></p>
 <h3 id="开启打赏功能"><a href="#开启打赏功能" class="headerlink" title="开启打赏功能"></a>开启打赏功能</h3><p>越来越多的平台（微信公众平台，新浪微博，简书，百度打赏等）支持打赏功能，付费阅读时代越来越近，特此增加了打赏功能，支持微信打赏和支付宝打赏。 只需要 <code>主题配置文件</code> 中填入 微信 和 支付宝 收款二维码图片地址 即可开启该功能。<br>举例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reward_comment: 您的支持将鼓励我继续分享！</span><br><span class="line">wechatpay: /uploads/wechat-qcode.jpg</span><br><span class="line">alipay: /uploads/alipay.jpg</span><br></pre></td></tr></table></figure></p>
 <h3 id="如何设置「阅读全文」"><a href="#如何设置「阅读全文」" class="headerlink" title="如何设置「阅读全文」"></a>如何设置「阅读全文」</h3><p>在首页显示一篇文章的部分内容，并提供一个链接跳转到全文页面是一个常见的需求。 NexT 提供三种方式来控制文章在首页的显示方式。但最推荐的方法是：<br>在文章中使用 <code>&lt;!-- more --&gt;</code> 手动进行截断，Hexo 提供的方式.<br>注：建议使用这种方式。除了可以精确控制需要显示的摘录内容以外， 这种方式也可以让 Hexo 中的插件更好的识别。</p>
-<h3 id="博文访问量统计"><a href="#博文访问量统计" class="headerlink" title="博文访问量统计"></a>博文访问量统计</h3><h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p><a href="https://hexo.io/zh-cn/docs/front-matter.html#分类和标签" target="_blank" rel="external">hexo</a>官网说得很详细。</p>
+<h3 id="去掉网站底部的广告"><a href="#去掉网站底部的广告" class="headerlink" title="去掉网站底部的广告"></a>去掉网站底部的广告</h3><p>参考链接：<a href="http://www.jianshu.com/p/99665608d295/comments/1116387" target="_blank" rel="external">如何在一天之内搭建以你自己名字为域名且具备cool属性的个人博客</a></p>
+<p>打开文件blog\themes\next\languages\zh-Hans.yml，找到footer标签，<br>原来的是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">  powered: &quot;由 %s 强力驱动&quot;</span><br><span class="line">  theme: 主题</span><br></pre></td></tr></table></figure></p>
+<p>现在被我改成了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">  powered: &quot;  &quot;</span><br><span class="line">  theme: &quot;  &quot;</span><br></pre></td></tr></table></figure></p>
+<p>改完之后，底部的显示效果为： <code>- NexT.Mist</code></p>
+<p>现在继续改。修改themes/next/layout/_partials/footer里对应的html代码。这个文件里，原来的全部内容是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;copyright&quot; &gt;</span><br><span class="line">  &#123;% set current = date(Date.now(), &quot;YYYY&quot;) %&#125;</span><br><span class="line">  &amp;copy; &#123;% if theme.since and theme.since != current %&#125; &#123;&#123; theme.since &#125;&#125; - &#123;% endif %&#125;</span><br><span class="line">  &lt;span itemprop=&quot;copyrightYear&quot;&gt;&#123;&#123; current &#125;&#125;&lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;with-love&quot;&gt;</span><br><span class="line">    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;author&quot; itemprop=&quot;copyrightHolder&quot;&gt;&#123;&#123; config.author &#125;&#125;&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">  &#123;&#123; __(&apos;footer.powered&apos;, &apos;&lt;a class=&quot;theme-link&quot; href=&quot;http://hexo.io&quot;&gt;Hexo&lt;/a&gt;&apos;) &#125;&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;theme-info&quot;&gt;</span><br><span class="line">  &#123;&#123; __(&apos;footer.theme&apos;) &#125;&#125; -</span><br><span class="line">  &lt;a class=&quot;theme-link&quot; href=&quot;https://github.com/iissnan/hexo-theme-next&quot;&gt;</span><br><span class="line">    NexT.&#123;&#123; theme.scheme &#125;&#125;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>改完之后，文件的内容是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;copyright&quot; &gt;</span><br><span class="line">  &#123;% set current = date(Date.now(), &quot;YYYY&quot;) %&#125;</span><br><span class="line">  &amp;copy; &#123;% if theme.since and theme.since != current %&#125; &#123;&#123; theme.since &#125;&#125; - &#123;% endif %&#125;</span><br><span class="line">  &lt;span itemprop=&quot;copyrightYear&quot;&gt;&#123;&#123; current &#125;&#125;&lt;/span&gt;</span><br><span class="line">  &lt;!--倒数第二行的爱心--&gt;</span><br><span class="line">  &lt;span class=&quot;with-love&quot;&gt;   </span><br><span class="line">    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;author&quot; itemprop=&quot;copyrightHolder&quot;&gt;&#123;&#123; config.author &#125;&#125;&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!--最后一行的后者--&gt;</span><br><span class="line">&lt;div class=&quot;theme-info&quot;&gt;</span><br><span class="line">  </span><br><span class="line">    微信公众号：生命团队 | vitateam</span><br><span class="line">  </span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p><a href="https://hexo.io/zh-cn/docs/front-matter.html#分类和标签" target="_blank" rel="external">hexo</a>官网说得很详细。</p>
 <p>###文章中的分类和标签<br>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。<br>底下代码是一篇包含分类和标签的文章的例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 标签测试文章</span><br><span class="line">date: 2014-12-22 12:39:04</span><br><span class="line">categories:</span><br><span class="line">- Diary</span><br><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure></p>
 
       
@@ -495,7 +494,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置"><span class="nav-number">1.</span> <span class="nav-text">站点配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置侧边栏头像"><span class="nav-number">1.1.</span> <span class="nav-text">设置侧边栏头像</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题配置"><span class="nav-number">2.</span> <span class="nav-text">主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语言设置"><span class="nav-number">2.1.</span> <span class="nav-text">语言设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导航菜单设置"><span class="nav-number">2.2.</span> <span class="nav-text">导航菜单设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建分类页面"><span class="nav-number">2.2.1.</span> <span class="nav-text">新建分类页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建标签页面"><span class="nav-number">2.2.2.</span> <span class="nav-text">新建标签页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建关于页面"><span class="nav-number">2.2.3.</span> <span class="nav-text">新建关于页面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侧边栏社交链接"><span class="nav-number">2.3.</span> <span class="nav-text">侧边栏社交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启打赏功能"><span class="nav-number">2.4.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何设置「阅读全文」"><span class="nav-number">2.5.</span> <span class="nav-text">如何设置「阅读全文」</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博文访问量统计"><span class="nav-number">2.6.</span> <span class="nav-text">博文访问量统计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">3.</span> <span class="nav-text">写文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置"><span class="nav-number">1.</span> <span class="nav-text">站点配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置侧边栏头像"><span class="nav-number">1.1.</span> <span class="nav-text">设置侧边栏头像</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题配置"><span class="nav-number">2.</span> <span class="nav-text">主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语言设置"><span class="nav-number">2.1.</span> <span class="nav-text">语言设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导航菜单设置"><span class="nav-number">2.2.</span> <span class="nav-text">导航菜单设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建分类页面"><span class="nav-number">2.2.1.</span> <span class="nav-text">新建分类页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建标签页面"><span class="nav-number">2.2.2.</span> <span class="nav-text">新建标签页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建关于页面"><span class="nav-number">2.2.3.</span> <span class="nav-text">新建关于页面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侧边栏社交链接"><span class="nav-number">2.3.</span> <span class="nav-text">侧边栏社交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启打赏功能"><span class="nav-number">2.4.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何设置「阅读全文」"><span class="nav-number">2.5.</span> <span class="nav-text">如何设置「阅读全文」</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#去掉网站底部的广告"><span class="nav-number">2.6.</span> <span class="nav-text">去掉网站底部的广告</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">3.</span> <span class="nav-text">写文章</span></a></li></ol></div>
             
           </div>
         </section>
@@ -515,22 +514,23 @@
   
   &copy; 
   <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
+  <!--倒数第二行的星号-->
+  <span class="with-love">   
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">生命壹号</span>
 </div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+
+<!--最后一行的后者-->
+<div class="theme-info">
+  
+    微信公众号：生命团队 | vitateam
+  
 </div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+ 
+  
 
         
 
